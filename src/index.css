@@ -1,13 +1,93 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins', sans-serif;
 }
+h1{
+  margin: 32px 0;
+  color:blue;
+  font-size: 24px;
+  text-align: center;
+  
+}
+h3, h4{
+  margin: 32px 0;
+  color:black;
+  text-align: center;
+  
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 5px solid skyblue;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 10px #ccc;
+
+}
+.btn{
+   
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+  }
+  .add-form {
+    margin-bottom: 40px;
+  }
+  .form-control {
+    margin: 20px 0;
+  }
+
+  .form-control input {
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+  }
+  .badge{
+    cursor: pointer;
+    
+  }
+  .item {
+    border-radius: 2px;
+    border: 2px solid blue;
+    background-color: skyblue;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+   
+    
+  }
+  .iconItem{
+    display: inline-block;
+    padding-left: 50px;
+  }
+  
+  .listItem{
+    margin-bottom: 10px;
+     
+  }
+  
+  

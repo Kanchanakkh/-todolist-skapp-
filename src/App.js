@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useContext} from 'react'
+import TodoListForm from './components/todolistForm'
+import Login from './components/login'
+import './index.css'
+import {MyContext} from './components/context/index'
 
-function App() {
+
+const App = () => {
+  
+  const context = useContext(MyContext);
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className="container">
+        <h1 >Let's get started with your lists</h1>
+        {context.loggedIn ? (<TodoListForm />) : (<Login />)}
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
