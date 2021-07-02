@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Todolist SkApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A mini todolist application utilizing MySky UI, setJSON & getJSON from Skynet
 
-## Available Scripts
+## About Skynet
 
-In the project directory, you can run:
+Skynet is a hosting platform that is easy, fast and secure to use for developers to build applications on the decentralized Internet. 
+Visit [Skynet](https://siasky.net/) to learn more
 
-### `yarn start`
+## How to run
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In the project directory, do the follwings:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### 1. `npm install` or `yarn install`
 
-### `yarn test`
+#### 2. `npm start` or `yarn start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The application will then proceed to run in the development mode through http://localhost:3000
 
-### `yarn build`
+## Challenges
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I was spending a few hours on how to debug 'client.loadMySky is not a function' as I didn't know that I installed skynet-js dependency incorrectly. This mistake made me realized that I should have checked the difference between the dependency from mine and the one from skynet workshop's package.json. Thanks to Skynet's Discord community, I fixed it by doing "npm install skynet-js@bet" instead (you can also use yarn). Another issue that I encountered was setting up my data for setJSON. For this, I made use the reference from: [SkynetClient API Usage (Browser-JS)](https://siasky.net/AAAGR5D19nL6v9MXXjDBWqAxA68Ysu1Pahf4j-8LHCaK5A/#/). However, when I followed the instruction, I kept getting 'undefined value ' for 'skyLink' field. Again, thanks to Skynet's Discord server, I was able to solve the problem by replacing it with 'dataLink'.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Resources
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Check out resources below to learn more how to use features from Skynet. Doing Skynet workshop is a good starting point and you will learn a lot from the explanations.
+- [Skynet Workshop Repo](https://github.com/SkynetLabs/skynet-workshop)
+- [Skynet Documentation](https://siasky.net/docs/#introduction)
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
